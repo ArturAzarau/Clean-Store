@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B7AE5D25205C4DFA00C1CA69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */; };
-		B7AE5D27205C4DFA00C1CA69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D26205C4DFA00C1CA69 /* ViewController.swift */; };
 		B7AE5D2A205C4DFA00C1CA69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */; };
 		B7AE5D2C205C4DFA00C1CA69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */; };
 		B7AE5D2F205C4DFA00C1CA69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */; };
+		B7AE5D42205C4E7B00C1CA69 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D3C205C4E7B00C1CA69 /* CreateOrderPresenter.swift */; };
+		B7AE5D43205C4E7B00C1CA69 /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D3D205C4E7B00C1CA69 /* CreateOrderWorker.swift */; };
+		B7AE5D44205C4E7B00C1CA69 /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D3E205C4E7B00C1CA69 /* CreateOrderRouter.swift */; };
+		B7AE5D45205C4E7B00C1CA69 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D3F205C4E7B00C1CA69 /* CreateOrderModels.swift */; };
+		B7AE5D46205C4E7B00C1CA69 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D40205C4E7B00C1CA69 /* CreateOrderViewController.swift */; };
+		B7AE5D47205C4E7B00C1CA69 /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D41205C4E7B00C1CA69 /* CreateOrderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7AE5D21205C4DFA00C1CA69 /* Clean Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7AE5D26205C4DFA00C1CA69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7AE5D29205C4DFA00C1CA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE5D2E205C4DFA00C1CA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AE5D30205C4DFA00C1CA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AE5D3C205C4E7B00C1CA69 /* CreateOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderPresenter.swift; sourceTree = "<group>"; };
+		B7AE5D3D205C4E7B00C1CA69 /* CreateOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderWorker.swift; sourceTree = "<group>"; };
+		B7AE5D3E205C4E7B00C1CA69 /* CreateOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRouter.swift; sourceTree = "<group>"; };
+		B7AE5D3F205C4E7B00C1CA69 /* CreateOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModels.swift; sourceTree = "<group>"; };
+		B7AE5D40205C4E7B00C1CA69 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		B7AE5D41205C4E7B00C1CA69 /* CreateOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		B7AE5D23205C4DFA00C1CA69 /* Clean Store */ = {
 			isa = PBXGroup;
 			children = (
-				B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */,
-				B7AE5D26205C4DFA00C1CA69 /* ViewController.swift */,
-				B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */,
-				B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */,
-				B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */,
-				B7AE5D30205C4DFA00C1CA69 /* Info.plist */,
+				B7AE5D3A205C4E5200C1CA69 /* Scenes */,
+				B7AE5D39205C4E4200C1CA69 /* Configuration */,
+				B7AE5D36205C4E1C00C1CA69 /* Application Delegate */,
+				B7AE5D37205C4E3100C1CA69 /* Storyboards */,
+				B7AE5D38205C4E3800C1CA69 /* Resources */,
 			);
 			path = "Clean Store";
+			sourceTree = "<group>";
+		};
+		B7AE5D36205C4E1C00C1CA69 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		B7AE5D37205C4E3100C1CA69 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */,
+				B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B7AE5D38205C4E3800C1CA69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7AE5D39205C4E4200C1CA69 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D30205C4DFA00C1CA69 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B7AE5D3A205C4E5200C1CA69 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D3B205C4E5700C1CA69 /* Create Order */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B7AE5D3B205C4E5700C1CA69 /* Create Order */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE5D3C205C4E7B00C1CA69 /* CreateOrderPresenter.swift */,
+				B7AE5D3D205C4E7B00C1CA69 /* CreateOrderWorker.swift */,
+				B7AE5D3E205C4E7B00C1CA69 /* CreateOrderRouter.swift */,
+				B7AE5D3F205C4E7B00C1CA69 /* CreateOrderModels.swift */,
+				B7AE5D40205C4E7B00C1CA69 /* CreateOrderViewController.swift */,
+				B7AE5D41205C4E7B00C1CA69 /* CreateOrderInteractor.swift */,
+			);
+			path = "Create Order";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AE5D27205C4DFA00C1CA69 /* ViewController.swift in Sources */,
 				B7AE5D25205C4DFA00C1CA69 /* AppDelegate.swift in Sources */,
+				B7AE5D46205C4E7B00C1CA69 /* CreateOrderViewController.swift in Sources */,
+				B7AE5D43205C4E7B00C1CA69 /* CreateOrderWorker.swift in Sources */,
+				B7AE5D45205C4E7B00C1CA69 /* CreateOrderModels.swift in Sources */,
+				B7AE5D42205C4E7B00C1CA69 /* CreateOrderPresenter.swift in Sources */,
+				B7AE5D44205C4E7B00C1CA69 /* CreateOrderRouter.swift in Sources */,
+				B7AE5D47205C4E7B00C1CA69 /* CreateOrderInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YH3LZQ69V;
 				INFOPLIST_FILE = "Clean Store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "arturazarau.Clean-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YH3LZQ69V;
 				INFOPLIST_FILE = "Clean Store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "arturazarau.Clean-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
