@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7AE5D25205C4DFA00C1CA69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */; };
-		B7AE5D2A205C4DFA00C1CA69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */; };
+		B7AE5D2A205C4DFA00C1CA69 /* Create Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D28205C4DFA00C1CA69 /* Create Order.storyboard */; };
 		B7AE5D2C205C4DFA00C1CA69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */; };
 		B7AE5D2F205C4DFA00C1CA69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */; };
 		B7AE5D42205C4E7B00C1CA69 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE5D3C205C4E7B00C1CA69 /* CreateOrderPresenter.swift */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		B7AE5D21205C4DFA00C1CA69 /* Clean Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE5D24205C4DFA00C1CA69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7AE5D29205C4DFA00C1CA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7AE5D29205C4DFA00C1CA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Create Order.storyboard"; sourceTree = "<group>"; };
 		B7AE5D2B205C4DFA00C1CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE5D2E205C4DFA00C1CA69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AE5D30205C4DFA00C1CA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		B7AE5D37205C4E3100C1CA69 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */,
+				B7AE5D28205C4DFA00C1CA69 /* Create Order.storyboard */,
 				B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -188,7 +188,7 @@
 			files = (
 				B7AE5D2F205C4DFA00C1CA69 /* LaunchScreen.storyboard in Resources */,
 				B7AE5D2C205C4DFA00C1CA69 /* Assets.xcassets in Resources */,
-				B7AE5D2A205C4DFA00C1CA69 /* Main.storyboard in Resources */,
+				B7AE5D2A205C4DFA00C1CA69 /* Create Order.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,12 +212,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B7AE5D28205C4DFA00C1CA69 /* Main.storyboard */ = {
+		B7AE5D28205C4DFA00C1CA69 /* Create Order.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B7AE5D29205C4DFA00C1CA69 /* Base */,
 			);
-			name = Main.storyboard;
+			name = "Create Order.storyboard";
 			sourceTree = "<group>";
 		};
 		B7AE5D2D205C4DFA00C1CA69 /* LaunchScreen.storyboard */ = {
@@ -344,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YH3LZQ69V;
-				INFOPLIST_FILE = "Clean Store/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Clean Store/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "arturazarau.Clean-Store";
@@ -360,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YH3LZQ69V;
-				INFOPLIST_FILE = "Clean Store/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Clean Store/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "arturazarau.Clean-Store";
