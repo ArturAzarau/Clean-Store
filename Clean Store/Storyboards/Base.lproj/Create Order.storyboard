@@ -693,7 +693,6 @@
                         <outlet property="expirationDateTextField" destination="JHr-Zi-quK" id="NCK-PS-DN6"/>
                         <outlet property="shippingMethodPicker" destination="mQK-bP-w6N" id="GZ2-Kb-lD6"/>
                         <outlet property="shippingMethodTextField" destination="on8-Xx-Agr" id="dU6-Sx-LGI"/>
-                        <outletCollection property="textField" destination="UiR-7F-vf1" collectionClass="NSMutableArray" id="Kuc-wC-8us"/>
                         <outletCollection property="textFields" destination="UiR-7F-vf1" collectionClass="NSMutableArray" id="lsH-WM-ib3"/>
                         <outletCollection property="textFields" destination="dxS-tZ-pT8" collectionClass="NSMutableArray" id="ThM-1I-uAK"/>
                         <outletCollection property="textFields" destination="ShP-vs-2gU" collectionClass="NSMutableArray" id="6WS-ud-8kN"/>
@@ -728,6 +727,10 @@
                 <pickerView contentMode="scaleToFill" id="mQK-bP-w6N">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="yNN-Y1-poN" id="BNs-xH-sJf"/>
+                        <outlet property="delegate" destination="yNN-Y1-poN" id="ERN-zJ-rIz"/>
+                    </connections>
                 </pickerView>
             </objects>
             <point key="canvasLocation" x="566" y="35"/>

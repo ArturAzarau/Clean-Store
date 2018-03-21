@@ -12,9 +12,8 @@
 
 import UIKit
 
-protocol CreateOrderDisplayLogic: class
-{
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel)
+protocol CreateOrderDisplayLogic: class {
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
 }
 
 class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
@@ -34,6 +33,11 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
         }
     }
     
+    private func configurePickers() {
+        shippingMethodTextField.inputView = shippingMethodPicker
+        expirationDateTextField.inputView = expirationDatePicker
+    }
+    
     // MARK: - Shipping method
     
     @IBOutlet weak var shippingMethodTextField: UITextField!
@@ -45,7 +49,9 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
     @IBOutlet var expirationDatePicker: UIDatePicker!
     
     @IBAction func expirationDatePickerValueChanged(sender: AnyObject) {
-        
+        let date = expirationDatePicker.date
+        let request = CreateOrder.FormatExpirationDate.Request(date: date)
+        interactor?.formatExpirationDate(request: request)
     }
     // MARK: - Properties
     
@@ -99,22 +105,17 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        doSomething()
+        configurePickers()
     }
     
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
     
-    func doSomething()
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
     {
-        let request = CreateOrder.Something.Request()
-        interactor?.doSomething(request: request)
-    }
-    
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel)
-    {
-        //nameTextField.text = viewModel.name
+        let date = viewModel.date
+        expirationDateTextField.text = date
     }
 }
 
@@ -128,3 +129,42 @@ extension CreateOrderViewController: UITextFieldDelegate {
         return true
     }
 }
+
+extension CreateOrderViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        guard let count = interactor?.shippingMethods.count else { return 0 }
+        return count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return interactor?.shippingMethods[row]
+    }
+}
+
+extension CreateOrderViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        shippingMethodTextField.text = interactor?.shippingMethods[row]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
